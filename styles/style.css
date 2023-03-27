@@ -1,13 +1,13 @@
 @font-face {
-  font-family: pricedown;
-  src: url(../fonts/pricedown_bl.otf);
+    font-family: pricedown;
+    src: url(../fonts/pricedown_bl.otf);
 }
 
-.has-bg-img { 
-	background: url('../images/sky.jpg') center center; 
-	background-size:cover;
-	background-color: grey;
-	background-blend-mode: multiply;
+.has-bg-img {
+    background: url('../images/sky.jpg') center center;
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
 }
 
 .navbar-item img {
@@ -19,7 +19,7 @@
     text-transform: uppercase;
     margin: 1em 0 0.5em;
     color: #dbdbdb;
-    font-family: "droid-serif", helvetica neue, Helvetica,Arial, sans-serif;
+    font-family: "droid-serif", helvetica neue, Helvetica, Arial, sans-serif;
     line-height: 1.4737;
     font-weight: 400;
     font-size: 1.143em;
@@ -31,7 +31,7 @@
     font-size: 6em;
     font-family: pricedown;
     text-transform: uppercase;
-    text-shadow: -2px 2px 0 rgba(0,0,0,.3), -2px 4px 2px rgba(0,0,0,.1);
+    text-shadow: -2px 2px 0 rgba(0, 0, 0, .3), -2px 4px 2px rgba(0, 0, 0, .1);
     line-height: 1.213483146em;
     color: #dbdbdb;
 }
@@ -58,4 +58,76 @@ kbd {
     line-height: 1;
     padding: 2px 4px;
     white-space: nowrap;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    left: 49%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation: fade_move_down 4s ease-in-out infinite;
+    animation: fade_move_down 4s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade_move_down {
+    0% {
+        -moz-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
 }
