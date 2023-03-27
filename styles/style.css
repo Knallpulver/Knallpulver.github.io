@@ -1,0 +1,61 @@
+@font-face {
+  font-family: pricedown;
+  src: url(../fonts/pricedown_bl.otf);
+}
+
+.has-bg-img { 
+	background: url('../images/sky.jpg') center center; 
+	background-size:cover;
+	background-color: grey;
+	background-blend-mode: multiply;
+}
+
+.navbar-item img {
+    max-height: 5rem !important;
+}
+
+.pre-title {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin: 1em 0 0.5em;
+    color: #dbdbdb;
+    font-family: "droid-serif", helvetica neue, Helvetica,Arial, sans-serif;
+    line-height: 1.4737;
+    font-weight: 400;
+    font-size: 1.143em;
+}
+
+.main-title {
+    letter-spacing: .1em;
+    font-weight: 100;
+    font-size: 6em;
+    font-family: pricedown;
+    text-transform: uppercase;
+    text-shadow: -2px 2px 0 rgba(0,0,0,.3), -2px 4px 2px rgba(0,0,0,.1);
+    line-height: 1.213483146em;
+    color: #dbdbdb;
+}
+
+.is-size-huge {
+    font-size: 6em;
+}
+
+.button.is-discord {
+    background-color: #7289da;
+    border-color: transparent;
+    color: #fff;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
