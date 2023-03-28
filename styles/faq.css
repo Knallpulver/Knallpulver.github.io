@@ -14,7 +14,7 @@ body.cd-overlay::after {
   display: table;
   clear: both;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 20px) {
   .cd-faq {
     box-shadow: none;
   }
@@ -59,12 +59,12 @@ body.cd-overlay::after {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 20px) {
   .cd-faq-items {
     position: static;
     height: auto;
-    width: 78%;
-    float: right;
+    width: 100%;
+    float: left;
     overflow: visible;
     -webkit-transform: translateZ(0) translateX(0);
     -moz-transform: translateZ(0) translateX(0);
@@ -108,7 +108,6 @@ body.cd-overlay::after {
   transition: right 0.4s;
 }
 .cd-close-panel::before, .cd-close-panel::after {
-  /* close icon in CSS */
   position: absolute;
   top: 16px;
   left: 12px;
@@ -134,14 +133,13 @@ body.cd-overlay::after {
 .cd-close-panel.move-left {
   right: 2%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 20px) {
   .cd-close-panel {
     display: none;
   }
 }
 
 .cd-faq-group {
-  /* hide group not selected */
   display: none;
 }
 .cd-faq-group.selected {
@@ -165,7 +163,7 @@ body.cd-overlay::after {
 .no-js .cd-faq-group {
   display: block;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 20px) {
   .cd-faq-group {
     /* all groups visible */
     display: block;
@@ -196,7 +194,7 @@ body.cd-overlay::after {
   line-height: 1.2;
   color: #363636;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 20px) {
   .cd-faq-trigger {
     font-size: 24px;
     font-size: 1.5rem;
@@ -258,7 +256,7 @@ body.cd-overlay::after {
   line-height: 1.4;
   color: #6c7d8e;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 20px) {
   .cd-faq-content {
     display: none;
     padding: 0 24px 30px;
